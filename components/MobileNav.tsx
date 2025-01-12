@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { useState } from 'react';
+import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
 
 export default function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <div className="md:hidden">
@@ -24,44 +24,43 @@ export default function MobileNav() {
           <ul className="flex flex-col items-center py-4">
             <li className="w-full">
               <Link
-                href="#"
+                href="/ueber"
                 className="block py-2 px-4 text-center hover:bg-blue-700 transition-colors duration-200"
                 onClick={toggleMenu}
               >
-                About
+                Über uns
               </Link>
             </li>
             <li className="w-full">
               <Link
-                href="#"
+                href="/projekte"
                 className="block py-2 px-4 text-center hover:bg-blue-700 transition-colors duration-200"
                 onClick={toggleMenu}
               >
-                Programs
+                Projekte
               </Link>
             </li>
             <li className="w-full">
               <Link
-                href="#"
+                href="/unterstuetzen"
                 className="block py-2 px-4 text-center hover:bg-blue-700 transition-colors duration-200"
                 onClick={toggleMenu}
               >
-                Donate
+                Unterstützen
               </Link>
             </li>
             <li className="w-full">
               <Link
-                href="#"
+                href="/kontakt"
                 className="block py-2 px-4 text-center hover:bg-blue-700 transition-colors duration-200"
                 onClick={toggleMenu}
               >
-                Contact
+                Kontakt
               </Link>
             </li>
           </ul>
         </nav>
       )}
     </div>
-  )
+  );
 }
-

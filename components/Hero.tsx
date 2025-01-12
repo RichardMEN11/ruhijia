@@ -59,37 +59,7 @@ export default function Hero() {
             className="object-cover"
             priority={index === 0}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div className="text-center text-white">
-              <h1
-                className={`text-4xl md:text-6xl font-bold mb-4 transition-all duration-700 ${
-                  index === currentSlide
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-4'
-                }`}
-              >
-                {slide.title}
-              </h1>
-              <p
-                className={`text-xl md:text-2xl mb-8 transition-all duration-700 delay-100 ${
-                  index === currentSlide
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-4'
-                }`}
-              >
-                {slide.subtitle}
-              </p>
-              <button
-                className={`bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-all duration-700 delay-200 ${
-                  index === currentSlide
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-4'
-                }`}
-              >
-                Get Involved
-              </button>
-            </div>
-          </div>
+          <div className="relative w-full h-full inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
         </div>
       ))}
 

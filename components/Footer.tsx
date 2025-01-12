@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-800 text-white py-8">
+    <footer className="w-full bg-red-900 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -13,15 +13,34 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul>
-              <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-              <li><a href="#" className="hover:underline">Terms of Service</a></li>
-              <li><a href="#" className="hover:underline">Volunteer</a></li>
-              <li><a href="#" className="hover:underline">Careers</a></li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Volunteer
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Careers
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Stay Connected</h3>
-            <p>Subscribe to our newsletter for updates on our work and ways to get involved.</p>
+            <p>
+              Subscribe to our newsletter for updates on our work and ways to
+              get involved.
+            </p>
             <form className="mt-4">
               <input
                 type="email"
@@ -30,7 +49,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+                className="mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full"
               >
                 Subscribe
               </button>
@@ -42,6 +61,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
